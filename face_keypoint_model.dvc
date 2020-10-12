@@ -1,0 +1,3 @@
+outs:
+- md5: bee79c1383c92cddad823cd987fe937b.dir
+  path: face_keypoint_model
