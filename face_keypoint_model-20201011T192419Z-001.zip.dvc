@@ -1,0 +1,3 @@
+outs:
+- md5: 6552c1f5ab97911f1c11beda68590b91
+  path: face_keypoint_model-20201011T192419Z-001.zip
