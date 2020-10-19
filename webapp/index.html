@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Face Keypoint Example</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>Face Keypoint Example</h2>
+        <div id="info" class="text-center">
+            OpenCV.js is loading...
+        </div>
+        <div class="control"><button id="startAndStop">Stop</button></div>
+        <div class="invisible">
+            <video id="video" class="hidden">Your browser does not support the video tag.</video>
+          </div>
+        <div id="container">
+            <canvas class="center-block" id="canvasOutput" width=320 height=240></canvas>
+        </div>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+
+        <!-- load face and keypoint detection functions -->
+        <script src="face-and-keypoint.js"></script>
+
+        <!-- configure start-stop button callback -->
+        <script>
+                let startAndStop = document.getElementById('startAndStop');
+                startAndStop.addEventListener('click', () => {
+                    if (streaming) {
+                        // stop
+                        stopCamera();
+                    } else {
+                        // start
+                        startCamera();
+                    }
+                });
+        </script>
+
+        <!-- load opencv -->
+        <script>
+            var Module = {
+                wasmBinaryFile: 'wasm/opencv_js.wasm',
+                preRun: [function() {
+                    Module.FS_createPreloadedFile('/', 'haarcascade_frontalface_default.xml', './haarcascade_frontalface_default.xml', true, false);
+                }],
+                _main: function() {opencvIsReady();}
+            };
+        </script>
+        <script async src="wasm/opencv.js"></script>
+    </body>
+</html>

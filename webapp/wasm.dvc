@@ -1,0 +1,3 @@
+outs:
+- md5: f0467f2cf2fa929db384674685660c05.dir
+  path: wasm
