@@ -1,0 +1,5 @@
+outs:
+- md5: 07d6d05e4b22ce43d2517a6a08fae080.dir
+  size: 64563146
+  nfiles: 3
+  path: face_keypoint_model_no_batchnorm

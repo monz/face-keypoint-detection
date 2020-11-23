@@ -1,0 +1,4 @@
+outs:
+- md5: 2a2de2d3fb83e438ab0d0786dd463249
+  size: 41418363
+  path: face_keypoint_model_no_batchnorm-20201123T194611Z-001.zip

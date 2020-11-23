@@ -10,3 +10,5 @@ face_keypoint_model/
 __pycache__/
 /face_keypoint_model_rgb-20201117T203957Z-001.zip
 /face_keypoint_model_rgb
+/face_keypoint_model_no_batchnorm
+/face_keypoint_model_no_batchnorm-20201123T194611Z-001.zip
