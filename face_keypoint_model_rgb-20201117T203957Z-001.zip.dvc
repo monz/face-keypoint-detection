@@ -1,0 +1,3 @@
+outs:
+- md5: bdf7a1910d726f92fb3e7bc1e47451ad
+  path: face_keypoint_model_rgb-20201117T203957Z-001.zip

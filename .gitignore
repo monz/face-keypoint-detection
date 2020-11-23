@@ -8,3 +8,5 @@ face_keypoint_model/
 /facial-keypoints-detection.zip
 *.pyc
 __pycache__/
+/face_keypoint_model_rgb-20201117T203957Z-001.zip
+/face_keypoint_model_rgb

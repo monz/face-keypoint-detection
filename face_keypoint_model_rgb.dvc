@@ -1,0 +1,3 @@
+outs:
+- md5: fa533adcb2bbf33d32405a3c1681858a.dir
+  path: face_keypoint_model_rgb
