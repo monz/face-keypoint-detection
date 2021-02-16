@@ -12,7 +12,7 @@ Code in this repository was used for teaching purposes.
 - save and load trained model for later use
 - integrate trained model into a simple python application
 - integrate trained model into a web application
-
+- deployment of the web application to a web server
 
 
 ## See Running Example
